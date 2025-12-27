@@ -22,7 +22,7 @@ func NewFlagSet() (*flag.FlagSet, *FlagValues) {
 	fs.SetOutput(os.Stdout)
 
 	vals := &FlagValues{
-		Margin:      fs.Int("m", 24, "Margin around the text (pixels)"),
+		Margin:      fs.Int("m", 16, "Margin around the text (pixels)"),
 		TabSize:     fs.Int("t", 4, "Number of spaces to replace each tab"),
 		Square:      fs.Bool("s", false, "Force the image to be square"),
 		TextColor:   fs.String("c", "#000", "Text color in HEX format"),
