@@ -121,8 +121,8 @@ func RenderGG(text string, opts RenderOptions) (*gg.Context, error) {
 	}
 
 	// Disegna le linee centrando verticalmente e orizzontalmente
-	xoff := float64(opts.Margin) / 2.0
-	yoff := float64(opts.Margin) / 2.0
+	xoff := float64(opts.Margin) // 2.0
+	yoff := float64(opts.Margin) // 2.0
 
 	x := xoff
 	y := yoff + opts.LineSpacing*lineHeight + ascent

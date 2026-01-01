@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/lucasepe/t2i/internal/cmd"
-	"github.com/lucasepe/t2i/internal/image/text"
-	cmdutil "github.com/lucasepe/t2i/internal/util/cmd"
-	ioutil "github.com/lucasepe/t2i/internal/util/io"
+	"github.com/lucasepe/text2img/internal/cmd"
+	"github.com/lucasepe/text2img/internal/image/text"
+	cmdutil "github.com/lucasepe/text2img/internal/util/cmd"
+	ioutil "github.com/lucasepe/text2img/internal/util/io"
 	imageio "github.com/lucasepe/x/image/io"
 	textutil "github.com/lucasepe/x/text"
 )

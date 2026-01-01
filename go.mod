@@ -1,4 +1,4 @@
-module github.com/lucasepe/t2i
+module github.com/lucasepe/text2img
 
 go 1.25.3
 

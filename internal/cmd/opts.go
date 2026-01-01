@@ -4,7 +4,7 @@ import (
 	"flag"
 	"image/color"
 
-	"github.com/lucasepe/t2i/internal/image/text"
+	"github.com/lucasepe/text2img/internal/image/text"
 	"github.com/lucasepe/x/text/conv"
 )
 
