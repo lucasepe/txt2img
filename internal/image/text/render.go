@@ -120,12 +120,11 @@ func RenderGG(text string, opts RenderOptions) (*gg.Context, error) {
 		dc.SetRGB(0, 0, 0)
 	}
 
-	// Disegna le linee centrando verticalmente e orizzontalmente
 	xoff := float64(opts.Margin) // 2.0
 	yoff := float64(opts.Margin) // 2.0
 
 	x := xoff
-	y := yoff + opts.LineSpacing*lineHeight + ascent
+	y := yoff + ascent
 	for _, line := range lines {
 		dc.DrawStringAnchored(line, x, y, 0, 0)
 		y += lineHeight * opts.LineSpacing
