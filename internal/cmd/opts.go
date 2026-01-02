@@ -4,7 +4,7 @@ import (
 	"flag"
 	"image/color"
 
-	"github.com/lucasepe/text2img/internal/image/text"
+	"github.com/lucasepe/txt2img/internal/image/text"
 	"github.com/lucasepe/x/text/conv"
 )
 
@@ -28,11 +28,11 @@ func Configure(fs *flag.FlagSet, vals *FlagValues, args []string) Options {
 	return Options{
 		RenderOptions: text.RenderOptions{
 			Margin:          *vals.Margin,
-			AutoSize:        true,
-			Square:          *vals.Square,
 			TextColor:       color.RGBA{R: fr, G: fg, B: fb, A: fa},
 			BackgroundColor: color.RGBA{R: br, G: bg, B: bb, A: ba},
 			LineSpacing:     *vals.LineSpacing,
+			DebugBaseline:   *vals.DebugBaseline,
+			DebugGrid:       *vals.DebugGrid,
 		},
 		TabSize: *vals.TabSize,
 		Outfile: *vals.Outfile,
